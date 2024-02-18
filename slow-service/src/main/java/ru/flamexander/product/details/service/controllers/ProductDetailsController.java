@@ -14,6 +14,9 @@ public class ProductDetailsController {
         if (id > 100) {
             throw new RuntimeException();
         }
+        if (id % 2 == 0) {
+            throw new RuntimeException();
+        }
         Thread.sleep(2500 + (int)(Math.random() * 2500));
         return new ProductDetailsDto(id, "Product description..");
     }
