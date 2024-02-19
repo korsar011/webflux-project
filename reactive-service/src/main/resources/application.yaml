@@ -3,12 +3,12 @@ server:
 
 spring:
   r2dbc:
-    url: r2dbc:postgresql://localhost:5433/reactive
+    url: r2dbc:postgresql://localhost:5434/reactive
     username: postgres
     password: postgres
 
   flyway:
-    url: jdbc:postgresql://localhost:5433/reactive
+    url: jdbc:postgresql://localhost:5434/reactive
     user: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
