@@ -1,12 +1,14 @@
 server:
   port: 8189
+
 spring:
   r2dbc:
-    url: r2dbc:postgresql://localhost:5432/postgres?currentSchema=reactive
+    url: r2dbc:postgresql://localhost:5434/reactive
     username: postgres
-    password: admin
+    password: postgres
+
   flyway:
-    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=reactive
+    url: jdbc:postgresql://localhost:5434/reactive
     user: postgres
-    password: admin
+    password: postgres
     driver-class-name: org.postgresql.Driver
